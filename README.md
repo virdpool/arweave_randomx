@@ -36,7 +36,7 @@ benchmarker for arweave_randomx
 # how to build
 
     # install deps
-    apt-get install -y cmake g++ build-essential libhwloc-dev
+    apt-get install -y cmake build-essential libhwloc-dev
     git clone https://github.com/virdpool/arweave_randomx
     cd arweave_randomx
     # install https://github.com/nvm-sh/nvm
@@ -50,9 +50,10 @@ benchmarker for arweave_randomx
     # switch to win
     s1_win_build.bat
     ./s2_pre_pack.coffee
+    # if you don't want windows build ./s2_pre_pack.coffee --skip-win
     ./s3_build.coffee
     # see results in dist
-    you can launch
+    # you can launch
     start_dist.bat
     ./start_dist.sh
     
