@@ -10,6 +10,7 @@ benchmarker for arweave_randomx
   * linux (ubuntu 18.04) https://virdpool.com/arweave_randomx_dist/arweave_randomx
     * https://virdpool.com/arweave_randomx_dist/start_optimized.sh
     * https://virdpool.com/arweave_randomx_dist/start_optimized2.sh
+  * linux (ubuntu 20.04) https://virdpool.com/arweave_randomx_dist/arweave_randomx_20.04
 
 ## launch on Windows
 
