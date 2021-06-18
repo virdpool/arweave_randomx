@@ -2,6 +2,7 @@
 fs = require "fs"
 {execSync} = require "child_process"
 require "fy"
+argv = require("minimist")(process.argv.slice(2))
 
 arch_list = fs.readFileSync("arch_list", "utf-8")
   .split("\n")
@@ -86,26 +87,27 @@ for arch in arch_list
 # ###################################################################################################
 #    copy binary modules
 # ###################################################################################################
-cmd = "mkdir -p build/src_inter_win"
-execSync cmd
-cmd = "cp src_c/randomx_async/win/build/Release/module.node build/src_inter_win/randomx_async_12.node"
-execSync cmd
-cmd = "cp src_c/hwloc/win/build/Release/module.node build/src_inter_win/hwloc_12.node"
-execSync cmd
-
-fs.writeFileSync "build/src_inter_win/mod.js", """
-  global.randomx_async = require("./randomx_async_12.node")
-  global.hwloc = require("./hwloc_12.node")
-  """#"
-
-# ###################################################################################################
-#    copy src
-# ###################################################################################################
-cmd = "cp -r build/src_inter/* build/src_inter_win"
-execSync cmd
-
-conf.pkg.targets = ["node12-win-x64"]
-fs.writeFileSync "build/src_inter_win/package.json", JSON.stringify conf, null, 2
+if !argv["skip-win"]
+  cmd = "mkdir -p build/src_inter_win"
+  execSync cmd
+  cmd = "cp src_c/randomx_async/win/build/Release/module.node build/src_inter_win/randomx_async_12.node"
+  execSync cmd
+  cmd = "cp src_c/hwloc/win/build/Release/module.node build/src_inter_win/hwloc_12.node"
+  execSync cmd
+  
+  fs.writeFileSync "build/src_inter_win/mod.js", """
+    global.randomx_async = require("./randomx_async_12.node")
+    global.hwloc = require("./hwloc_12.node")
+    """#"
+  
+  # ###################################################################################################
+  #    copy src
+  # ###################################################################################################
+  cmd = "cp -r build/src_inter/* build/src_inter_win"
+  execSync cmd
+  
+  conf.pkg.targets = ["node12-win-x64"]
+  fs.writeFileSync "build/src_inter_win/package.json", JSON.stringify conf, null, 2
 
 # ###################################################################################################
 build_list = fs.readdirSync "build"
