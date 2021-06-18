@@ -36,7 +36,6 @@ benchmarker for arweave_randomx
     git clone https://github.com/virdpool/arweave_randomx
     cd arweave_randomx
     # install https://github.com/nvm-sh/nvm
-    # curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
     source ~/.bashrc
     nvm i 14
