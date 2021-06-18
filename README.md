@@ -24,9 +24,9 @@ benchmarker for arweave_randomx
 ## launch on Linux
 
     # ubuntu 18
-    apt-get install libhwloc5
+    apt-get install -y libhwloc5
     # ubuntu 20
-    apt-get install libhwloc15
+    apt-get install -y libhwloc15
     ./start_optimized.sh
     // OR (with large pages)
     ./start_optimized2.sh
