@@ -24,6 +24,11 @@ benchmarker for arweave_randomx
     // OR (with large pages)
     ./start_optimized2.sh
 
+## extra boost
+
+    # MSR
+    https://github.com/xmrig/xmrig/blob/dev/scripts/randomx_boost.sh
+
 # how to build
 
     # install deps
