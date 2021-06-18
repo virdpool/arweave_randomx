@@ -1,0 +1,8 @@
+# internal testing files
+launch*.sh
+launch*.bat
+
+build
+dist
+
+node_modules

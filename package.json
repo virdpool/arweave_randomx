@@ -1,0 +1,25 @@
+{
+  "name": "arweave_randomx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virdpool/arweave_randomx.git"
+  },
+  "keywords": [],
+  "author": "vird",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/virdpool/arweave_randomx/issues"
+  },
+  "homepage": "https://github.com/virdpool/arweave_randomx#readme",
+  "dependencies": {
+    "pkg": "^5.2.1",
+    "fy": "github:hu2prod/fy",
+    "lock_mixin": "github:hu2prod/lock_mixin"
+  }
+}

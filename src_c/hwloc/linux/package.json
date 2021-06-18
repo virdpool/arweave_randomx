@@ -1,0 +1,15 @@
+{
+  "name": "hwloc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "node-gyp configure build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-gyp": "^7.0.0"
+  }
+}
