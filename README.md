@@ -20,6 +20,7 @@ benchmarker for arweave_randomx
 
 ## launch on Linux
 
+    apt-get install -y libhwloc5
     ./start_optimized.sh
     // OR (with large pages)
     ./start_optimized2.sh
