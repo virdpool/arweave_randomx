@@ -5,23 +5,30 @@ benchmarker for arweave_randomx
 # binaries
 
   * windows 7 .. 10 https://virdpool.com/arweave_randomx_dist/arweave_randomx.exe
-    * https://virdpool.com/arweave_randomx_dist/arweave_randomx/start_optimized.bat
-    * https://virdpool.com/arweave_randomx_dist/arweave_randomx/start_optimized2.bat
+    * https://virdpool.com/arweave_randomx_dist/start_optimized.bat
+    * https://virdpool.com/arweave_randomx_dist/start_optimized2.bat
   * linux (ubuntu 18.04) https://virdpool.com/arweave_randomx_dist/arweave_randomx
-    * https://virdpool.com/arweave_randomx_dist/arweave_randomx/start_optimized.sh
-    * https://virdpool.com/arweave_randomx_dist/arweave_randomx/start_optimized2.sh
+    * https://virdpool.com/arweave_randomx_dist/start_optimized.sh
+    * https://virdpool.com/arweave_randomx_dist/start_optimized2.sh
 
 ## launch on Windows
 
     start_optimized.bat
     // OR (with large pages)
+    // how to setup large pages https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/enable-the-lock-pages-in-memory-option-windows?redirectedfrom=MSDN&view=sql-server-ver15
     start_optimized2.bat
 
 ## launch on Linux
 
+    apt-get install -y libhwloc5
     ./start_optimized.sh
     // OR (with large pages)
     ./start_optimized2.sh
+
+## extra boost
+
+    # MSR
+    https://github.com/xmrig/xmrig/blob/dev/scripts/randomx_boost.sh
 
 # how to build
 
@@ -30,7 +37,6 @@ benchmarker for arweave_randomx
     git clone https://github.com/virdpool/arweave_randomx
     cd arweave_randomx
     # install https://github.com/nvm-sh/nvm
-    # curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
     source ~/.bashrc
     nvm i 14
