@@ -15,6 +15,7 @@ benchmarker for arweave_randomx
 
     start_optimized.bat
     // OR (with large pages)
+    // how to setup large pages https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/enable-the-lock-pages-in-memory-option-windows?redirectedfrom=MSDN&view=sql-server-ver15
     start_optimized2.bat
 
 ## launch on Linux
