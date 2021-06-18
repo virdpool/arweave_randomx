@@ -26,6 +26,7 @@ benchmarker for arweave_randomx
 # how to build
 
     # install deps
+    apt-get install libhwloc5 libhwloc-dev
     git clone https://github.com/virdpool/arweave_randomx
     cd arweave_randomx
     # install https://github.com/nvm-sh/nvm
@@ -46,6 +47,5 @@ benchmarker for arweave_randomx
     start_dist.bat
     ./start_dist.sh
     
-
     
     
