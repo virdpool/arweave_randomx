@@ -5,11 +5,11 @@ benchmarker for arweave_randomx
 # binaries
 
   * windows 7 .. 10 https://virdpool.com/arweave_randomx_dist/arweave_randomx.exe
-    * https://virdpool.com/arweave_randomx_dist/arweave_randomx/start_optimized.bat
-    * https://virdpool.com/arweave_randomx_dist/arweave_randomx/start_optimized2.bat
+    * https://virdpool.com/arweave_randomx_dist/start_optimized.bat
+    * https://virdpool.com/arweave_randomx_dist/start_optimized2.bat
   * linux (ubuntu 18.04) https://virdpool.com/arweave_randomx_dist/arweave_randomx
-    * https://virdpool.com/arweave_randomx_dist/arweave_randomx/start_optimized.sh
-    * https://virdpool.com/arweave_randomx_dist/arweave_randomx/start_optimized2.sh
+    * https://virdpool.com/arweave_randomx_dist/start_optimized.sh
+    * https://virdpool.com/arweave_randomx_dist/start_optimized2.sh
 
 ## launch on Windows
 
